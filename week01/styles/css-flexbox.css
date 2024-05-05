@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {text-align: center;}
+h2 {font-size: 1.1rem; text-align: center;
+color: navy; padding: .5rem 1rem 0;}
+nav {
+	margin: 0 auto 2rem;
+	max-width: 90vw;
+}
+
+.modern a {
+	flex: 1 1 100%;
+}
+
+
+
+.navigation {
+	list-style: none;
+	display: flex;
+	background-color: #333;
+	align-items: center;
+}
+.navigation li {
+	flex: 1 1 auto; /* difference between auto and 100% flex-basis - turn on link borders to view */
+}
+.navigation a {
+	display: block;
+	color: #eee;
+	padding: 0.75rem;
+	text-decoration: none;
+	text-align: center;
+/* 	border: 1px dotted cyan; */
+}
+.navigation a:hover {
+	font-weight: 700;
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+.wrap {
+		flex-wrap: wrap;
+}
+
+p {
+	text-align: center;
+	font-size: smaller;
+}
