@@ -39,6 +39,10 @@ header nav ul li a {
     text-decoration: none;
 }
 
+nav.hidden {
+    display: none;
+}
+
 main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
