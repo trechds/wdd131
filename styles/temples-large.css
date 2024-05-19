@@ -32,6 +32,10 @@
         background-color: #4b4a4a;
     }
 
+    nav.hidden {
+        display: none;
+    }
+
     .navmenu a:hover{
         color: rgba(47, 134, 134, 0.664)
     }
