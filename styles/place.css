@@ -171,7 +171,7 @@ footer {
 
     #title1 {
         position: relative;
-        background-color: rgba(255, 0, 0, 0.756);
+        background-color: rgba(255, 0, 0, 0.678);
         margin: 100px 0 -60px 135px;
         z-index: 2;
         width: 20%;
@@ -195,7 +195,7 @@ footer {
 
     #title2 {
         text-align: left;
-        background-color: rgba(3, 29, 177, 0.692);
+        background-color: rgba(48, 158, 5, 0.812);
         position: relative;
         padding-left: 2%;
         margin: 0 0 -60px 74%;
