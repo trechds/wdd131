@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rio Grande do Sul - Brazil</title>
+    <meta name="author" content="Thiago Rech">
+    <meta name="description" content="My Place">
+    <link rel="stylesheet" href="styles/place.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Rio Grande do Sul - BR</h1>
+    </header>
+    <main>
+        <div class="row1"></div>
+        <picture class="place">
+            <source srcset="images/churrasco.webp" media="(min-width: 1000px)">
+            <source srcset="images/chimarrao.webp" media="(min-width: 500px)">
+            <img src="images/chimarrao.webp" alt="Chimarrão" width="500">
+        </picture>
+        <div class="row2"></div>
+        <div class="grid">
+            <h2 id="title1">Data</h2>
+            <section class="data">
+                <p class="area"><strong>Area:</strong> 281,707.151 km²</p>
+                <p><strong>Population:</strong> 10,882,965</p>
+                <p><strong>Capital:</strong> Porto Alegre</p>
+                <p><strong>Languages:</strong> Portuguese</p>
+                <p><strong>Currency:</strong> Real</p>
+                <p><strong>Time Zone:</strong> UTC-3</p>
+                <p><strong>Calling Code:</strong> +55 54</p>
+                <p class="lastP"><strong>Internet TLD:</strong> .rs.gov.br</p>
+            </section>
+            <h2 id="title2">Weather</h2>
+            <section class="weather">
+                <picture class="weatherPic">
+                    <source srcset="images/weather.png" media="(min-width: 1000px)">
+                    <source srcset="images/weather.png" media="(min-width: 500px)">
+                    <img src="images/weather.png" alt="Weather">
+                </picture>
+                <p><strong>Temperature:</strong> <span id="temperature"></span></p>
+                <p><strong>Conditions:</strong> <span id="conditions"></span></p>
+                <p><strong>Wind:</strong> <span id="wind"></span></p>
+                <p><strong>Wind Chill:</strong> <span id="windChill"></span></p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Thiago Rech - Rio Grande do Sul, Brazil 🧉</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
