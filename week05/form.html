@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="author" content="Thiago Rech">
+    <meta name="description" content="An HTML form with a confirmation page for a product review form">    
+    <link rel="stylesheet" href="styles/form.css">
+    <script defer src="scripts/form.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form action="review.html" method="get">
+            <div class="product-name">
+                <label class="intro-product" for="product-name">Product</label>
+                <select id="product-name" name="product-name" required>
+                    <option value="" disabled selected>Select a Product...</option>
+                </select>
+            </div>
+            <div class="stars">
+                <label class="intro-star">Overall Rating</label>
+                <div class="rating">
+                    <input type="radio" id="fivestar" name="stars" value="5" required>
+                    <label for="fivestar"></label>
+                    <input type="radio" id="fourstar" name="stars" value="4" required>
+                    <label for="fourstar"></label>
+                    <input type="radio" id="threestar" name="stars" value="3" required>
+                    <label for="threestar"></label>
+                    <input type="radio" id="twostar" name="stars" value="2" required>
+                    <label for="twostar"></label>
+                    <input type="radio" id="onestar" name="stars" value="1" required>
+                    <label for="onestar"></label>
+                </div>
+            </div>
+            <div class="date-of-installation">
+                <label class="intro-date" for="installation">Date of Installation</label>
+                <input type="date" id="installation" name="installation" required>
+            </div>
+            <div class="useful-features">
+                <label class="intro-features">Which features did you find useful in the product?<br> <i>(Check all that apply)</i></label>
+                <label class="feature-label" for="feature1">Durability</label>
+                <input type="checkbox" id="feature1" name="features">
+                <label class="feature-label" for="feature2">Ease of Use</label>
+                <input type="checkbox" id="feature2" name="features">
+                <label class="feature-label" for="feature3">Performance</label>
+                <input type="checkbox" id="feature3" name="features">
+                <label class="feature-label" for="feature4">Design</label>
+                <input type="checkbox" id="feature4" name="features">
+            </div>
+            <div class="written-review">
+                <label class="intro-review" for="review">Written Review <i>(Optional)</i></label>
+                <textarea id="review" name="review"></textarea>
+            </div>
+            <div class="user-name">
+                <label class="intro-name" for="name">Your Name <i>(Optional)</i></label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="submission">
+                <input type="submit" id="submit" value="Post Review">
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> - Thiago Rech - Rio Grande do Sul</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
