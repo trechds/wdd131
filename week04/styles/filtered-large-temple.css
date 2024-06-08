@@ -1,0 +1,77 @@
+@media (min-width: 640px) {
+
+    header {
+        background-color: #4b4a4a;
+    }
+
+    main, header, footer {
+        display: grid;
+        grid-template-columns:1fr 1fr 1fr;
+        border: 3px solid #333;
+    }
+
+    h1 {
+        padding-left: 0;
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        text-align: center;
+    }
+
+    nav {
+        background-color: #4b4a4a;
+    }
+
+    .navmenu a:hover{
+        color: rgba(98, 240, 240, 0.664)
+    }
+
+    .navmenu li {
+        display: flex;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    .navmenu {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .navmenu a {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 20px;
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    .navmenu {
+        justify-content: center;
+        flex-direction: row;
+    }
+
+    .navmenu a {
+        display: block;
+    }
+
+    figure {
+        padding-left: 5rem;
+    }
+}
